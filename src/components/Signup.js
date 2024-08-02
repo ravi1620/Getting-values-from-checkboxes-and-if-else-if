@@ -45,13 +45,9 @@ function Signup() {
       console.log(languagesKnown);
 
       resultRef.current.innerHTML = `${salutation} ${firstNameInputRef.current.value} ${lastNameInputRef.current.value}  is from 
-            ${selectStateRef.current.value},  you know these Languages( ${
-        languagesKnown.tel == true ? "Telugu" : ""
-      }
-            ${languagesKnown.hindi == true ? "Hindi" : ""} 
-            ${
-              languagesKnown.eng == true ? "English" : ""
-            }) and your account has been created`;
+            ${selectStateRef.current.value},  you know these Languages( ${languagesKnown.tel == true ? "Telugu" : ""},
+            ${languagesKnown.hindi == true ? "Hindi" : ""}, 
+            ${languagesKnown.eng == true ? "English" : ""}) and your account has been created`;
     }
   };
 
@@ -73,7 +69,7 @@ function Signup() {
             maxLength="20"
           ></input>
           <span className="span" ref={firstNameResultRef}></span>
-        </div>
+       </div>
         <div>
           <label className="label">LastName</label>
           <input type="text" ref={lastNameInputRef}></input>
