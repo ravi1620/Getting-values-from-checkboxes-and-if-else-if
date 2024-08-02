@@ -44,10 +44,7 @@ function Signup() {
       }
       console.log(languagesKnown);
 
-      resultRef.current.innerHTML = `${salutation} ${
-        firstNameInputRef.current.value
-      }
-            ${lastNameInputRef.current.value}  is from 
+      resultRef.current.innerHTML = `${salutation} ${firstNameInputRef.current.value} ${lastNameInputRef.current.value}  is from 
             ${selectStateRef.current.value},  you know these Languages( ${
         languagesKnown.tel == true ? "Telugu" : ""
       }
